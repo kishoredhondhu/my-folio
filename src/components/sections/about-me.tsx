@@ -35,11 +35,6 @@ const SOCIAL_BUTTONS = [
     icon: <SiPeerlist className="w-5 h-5" />,
   },
   {
-    href: SOCIAL_LINKS.instagram,
-    label: "Instagram",
-    icon: <FaInstagram className="w-5 h-5" />,
-  },
-  {
     href: SOCIAL_LINKS.blog,
     label: "Blog",
     icon: (
