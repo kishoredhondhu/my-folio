@@ -12,47 +12,44 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Your Name - Portfolio Website",
+  title: "Dhondhu Kishore - Software Developer Portfolio",
   description:
-    "Your portfolio showcasing your development projects and skills. Update this description with your own details.",
+    "Explore the portfolio of Dhondhu Kishore, a software developer specializing in Java, Spring Boot, and microservices. Discover projects, skills, and professional experience.",
   keywords: [
-    "Your Name",
-    "Full Stack Developer",
+    "Dhondhu Kishore",
+    "Software Developer",
+    "Java",
+    "Spring Boot",
+    "Microservices",
     "React",
-    "Next.js",
-    "TypeScript",
-    "Web Development",
+    "Docker",
+    "REST APIs",
     "Portfolio",
-    "Frontend Developer",
-    "Backend Developer",
-    "JavaScript",
-    "Node.js",
-    "Your City",
-    "Your Country",
+    "Tirupati",
+    "India",
   ],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
-  publisher: "Your Name",
-  metadataBase: new URL("https://your-portfolio-url.com"),
+  authors: [{ name: "Dhondhu Kishore" }],
+  creator: "Dhondhu Kishore",
+  publisher: "Dhondhu Kishore",
+  metadataBase: new URL("https://dhondhukishore.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://your-portfolio-url.com",
-    title: "Your Name - Portfolio Website for a Full Stack Developer",
+    locale: "en_IN",
+    url: "https://dhondhukishore.com",
+    title: "Dhondhu Kishore - Software Developer Portfolio",
     description:
-      "Personal portfolio showcasing skills, projects, experience, and more. Built with modern web technologies.",
-    siteName: "Your Name Portfolio",
+      "Personal portfolio of Dhondhu Kishore, showcasing skills in Java, Spring Boot, microservices, and React.",
+    siteName: "Dhondhu Kishore's Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name - Portfolio Website for a Full Stack Developer",
+    title: "Dhondhu Kishore - Software Developer Portfolio",
     description:
-      "Personal portfolio showcasing skills, projects, experience, and more. Built with modern web technologies.",
-    creator: "@your_twitter_handle",
+      "Personal portfolio showcasing skills in Java, Spring Boot, and microservices.",
+    creator: "@kishor__2",
   },
   robots: {
     index: true,
@@ -66,7 +63,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "",
+    google: "", 
   },
 };
 
@@ -87,7 +84,6 @@ export default function RootLayout({
         {/* Skill Icons Preconnect */}
         <link rel="preconnect" href="https://skillicons.dev" />
 
-
         {/* JSON-LD structured data for SEO */}
         <script
           type="application/ld+json"
@@ -95,24 +91,25 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Your Name",
-              url: "https://your-portfolio-url.com",
-              jobTitle: "Full Stack Developer",
+              name: "Dhondhu Kishore",
+              url: "https://dhondhukishore.com",
+              jobTitle: "Software Developer",
               description:
-                "Personal portfolio showcasing skills, projects, experience, and more. Built with modern web technologies.",
+                "Personal portfolio showcasing skills in Java, Spring Boot, and building scalable microservices.",
               knowsAbout: [
+                "Java",
+                "Spring Boot",
+                "Microservices",
                 "React",
-                "Next.js",
-                "TypeScript",
-                "JavaScript",
-                "Node.js",
-                "Full Stack Development",
-                "Web Development",
+                "Docker",
+                "MySQL",
+                "REST APIs",
+                "Software Development",
               ],
               sameAs: [
-                "https://github.com/your-github-username",
-                "https://linkedin.com/in/your-linkedin",
-                "https://twitter.com/your-twitter",
+                "https://github.com/kishoredhondhu",
+                "https://www.linkedin.com/in/dhondhukishore",
+                "https://x.com/kishor__2",
               ],
             }),
           }}

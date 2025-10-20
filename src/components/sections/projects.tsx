@@ -15,7 +15,8 @@ export default function Projects() {
               <div className="flex items-center justify-between w-full">
                 <div className="flex flex-col flex-1">
                   <h3 className="font-medium text-base text-left">
-                    {project.link ? (
+                    {/* CHANGE 1: Title is a link only if it's not a placeholder */}
+                    {project.link && project.link !== "#" ? (
                       <Link
                         href={project.link}
                         target="_blank"
@@ -29,10 +30,13 @@ export default function Projects() {
                       project.name
                     )}
                   </h3>
-                  <p className="text-xs text-muted-foreground">Click to know more...</p>
+                  <p className="text-xs text-muted-foreground">
+                    Click to know more...
+                  </p>
                 </div>
                 <div className="flex gap-2">
-                  {project.link && (
+                  {/* CHANGE 2: External link icon only shows if it's not a placeholder */}
+                  {project.link && project.link !== "#" && (
                     <Link
                       href={project.link}
                       target="_blank"
@@ -43,15 +47,18 @@ export default function Projects() {
                       <ExternalLink className="w-4 h-4" />
                     </Link>
                   )}
-                  <Link
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 btn hover:scale-95 transition-transform"
-                    aria-label="View source code"
-                  >
-                    <Github className="w-4 h-4" />
-                  </Link>
+                  {/* CHANGE 3: GitHub icon only shows if it's not a placeholder */}
+                  {project.github && project.github !== "#" && (
+                    <Link
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 btn hover:scale-95 transition-transform"
+                      aria-label="View source code"
+                    >
+                      <Github className="w-4 h-4" />
+                    </Link>
+                  )}
                 </div>
               </div>
 

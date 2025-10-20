@@ -1,100 +1,108 @@
-// This file contains constants and data used across the portfolio template. 
-// Update the values to personalize your portfolio.
+
 
 export const ABOUT_ME = {
-  name: "Your Name",
+  name: "Kishore Dhondhu",
   title: "Software Developer",
-  location: "Your Location",
-  email: "your.email@example.com",
+  location: "Andhra Pradesh, India",
+  email: "kishoredhondhu@gmail.com",
   description: [
-    "Write a short introduction about yourself!",
-    "Mention your interests, what you love to build, or your coding journey.",
-    "You can add more lines or remove these as you like.",
+    "Hey there! 👋 I'm Kishore, a full-stack developer passionate about building reliable and scalable web applications. I enjoy working with distributed microservices and developing RESTful APIs using the Spring ecosystem.",
+
+    "I started my journey at Infosys in February 2025, where I contributed to a Movie Production Management System during my internship. Since then, I’ve been developing enterprise-grade applications, focusing on microservices, fault tolerance, and creating responsive frontends with React.",
+
+    "Some of my notable projects include a full-stack Finance Tracker and other web applications designed to solve real-world problems efficiently",
   ],
-  profileImage: "/profile-image.webp", // Replace with your profile image
-  profileGif: "/profile-gif.gif", // Replace with your personalised gif
+  profileImage: "/profile-image.jpg",
+  profileGif: "/profile-gif.gif",
 };
 
 export const USER_NAMES = {
-  githubUsername: "your-github-username",
-  leetcodeUsername: "your-leetcode-username", // remove or keep blank if you don't have a LeetCode profile
-  hashnodeUsername: "your-hashnode-username", // remove or keep blank if you don't have a Hashnode profile
+  githubUsername: "kishoredhondhu",
+  leetcodeUsername: "kishoreXD", 
+  mediumUsername : "kishoredhondhu",
 };
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/your-github-username",
-  linkedin: "https://linkedin.com/in/your-linkedin",
-  twitter: "https://twitter.com/your-twitter",
-  leetcode: "https://leetcode.com/your-leetcode",
-  peerlist: "https://peerlist.io/your-peerlist", // remove or keep blank if you don't have a Peerlist profile
-  instagram: "https://instagram.com/your-instagram",
-  email: "mailto:your.email@example.com",
-  blog: "https://yourblog.com", // remove if you don't have a blog
-  resume: "https://your-resume-drive-link.com",
+  github: "https://github.com/kishoredhondhu",
+  linkedin: "www.linkedin.com/in/dhondhukishore",
+  twitter: "https://x.com/kishor__2",
+  leetcode: "https://leetcode.com/u/KishoreXD/",
+  peerlist: "https://peerlist.io/kishoredhondhu", // remove or keep blank if you don't have a Peerlist profile
+  email: "mailto:kishoredhondhu@gmail.com",
+  blog: "https://medium.com/@kishoredhondhu", 
+  resume:
+    "https://drive.google.com/file/d/1Bugd568MiOiBNd4XpBC097n-3xOpsLFY/view?usp=sharing",
 };
 
 // Contact form endpoint (update with your own Formspree endpoint)
-export const FORM_ENDPOINT = "https://formspree.io/f/your-form-id";
-
-export const SKILLS = { // Keep only the skills you want to showcase and remove the rest
-  frontend: [
-    "HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Vue.js", "Angular", "Redux", "TailwindCSS", "Bootstrap", "Sass", "Less", "jQuery"
-  ],
-  backend: [
-    "Node.js", "Express.js", "NestJS", "Django", "Flask", "Spring Boot", "Ruby on Rails", "Laravel", "ASP.NET", "FastAPI"
-  ],
-  databases: [
-    "MongoDB", "MySQL", "PostgreSQL", "SQLite", "Redis", "Firebase", "Supabase"
-  ],
-  languages: [
-    "C", "C++", "C#", "Java", "Python", "JavaScript", "TypeScript", "Go", "Rust", "Ruby", "PHP", "Kotlin", "Swift", "Dart", "Scala"
-  ],
-  cloudDevOps: [
-    "AWS", "Azure", "GCP", "Docker", "Kubernetes", "Vercel", "Netlify", "Heroku", "GitHub Actions", "Jenkins"
-  ],
-  tools: [
-    "VS Code", "Git", "GitHub", "GitLab", "Bitbucket", "Postman", "Figma", "Vite", "Webpack", "Babel", "Jest", "Linux", "Windows", "MacOS"
-  ],
-};
+export const FORM_ENDPOINT = "https://formspree.io/f/mrbyddoe";
+export const SKILLS = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Bootstrap",
+  "Java",
+  "Spring Boot",
+  "MySQL",
+  "Docker",
+  "Prometheus",
+  "Swagger",
+  "Consul",
+  "Git",
+  "GitHub",
+  "Postman",
+  "VS Code",
+  "Windows",
+];
 
 export const PROJECTS = [
   {
-    name: "Project 1",
-    description: "Describe your project 1 here. Example: A web app for tracking habits.",
-    tech: ["React", "TypeScript"],
-    link: "https://yourproject1-link.com",
-    github: "https://github.com/yourusername/project1",
+    name: "Movie Production Management System",
+    description:
+      "An enterprise system developed during my internship at Infosys to streamline movie production workflows. The application centralized the management of schedules, resource allocation, and task tracking, improving coordination for production crews.",
+    tech: ["Spring Boot", "Java", "MySQL", "React", "Postman"],
+    link: "#", 
+    github: "#", 
   },
   {
-    name: "Project 2",
-    description: "Describe your project 2 here. Example: An e-commerce site for books.",
-    tech: ["Next.js", "Tailwind CSS"],
-    link: "https://yourproject2-link.com",
-    github: "https://github.com/yourusername/project2",
-  },
-  // Add more projects as needed
+    name: "Finance - Personal Finance Tracker",
+    description:
+      "A full-stack personal finance tracker built with a microservices architecture to ensure scalability and resilience. It allows users to monitor income, categorize expenses, and visualize their financial health through interactive dashboards.",
+    tech: ["React", "Spring Boot", "Docker", "Consul", "MySQL", "Prometheus", "Swagger"],
+    link: "#", 
+    github: "#", 
+  }, 
 ];
 
 export const EXPERIENCE = [
+
   {
-    company: "Company Name",
-    companyLink: "https://companyname.com/",
-    role: "Software Developer",
-    period: "Jan 2025 - Present",
-    location: "Remote/Location",
-    description: "Describe your responsibilities and achievements.",
-    skills: ["React", "Node.js", "XXXX"],
+    company: "Infosys Limited",
+    companyLink: "https://www.infosys.com/",
+    role: "Systems Engineer",
+    period: "July 2025 - Present",
+    location: "Bangalore, India",
+    description: "My current focus is on building and implementing scalable RESTful APIs as part of a distributed microservices environment. I am responsible for translating technical specifications into functional services and ensuring clear API contracts using Swagger (OpenAPI). Additionally, I work on developing responsive frontends using React and Bootstrap to enhance user experience.",
+    skills: ["React", "Spring Boot", "Docker", "MySQL", "Swagger", "Prometheus", "Git", "Java"],
   },
-  // Add more experience as needed
+    {
+    company: "Infosys Limited",
+    companyLink: "https://www.infosys.com/",
+    role: "Infosys Winternship",
+    period: "Jan 2025 - June 2025",
+    location: "Bangalore, India",
+    description: "As part of a full-stack project, I used Spring Boot for the backend and Angular for the frontend to develop a Movie Production System with my team. My primary role involved developing dashboards for multiple user types, specifically the Production Manager and Assistant Director dashboards. Our team received positive feedback from the managers for our work.",
+    skills: ["Java", "Angular", "Postman", "Spring Boot", "MySQL","Hibernate"],
+  }
 ];
 
 export const EDUCATION = [
   {
-    degree: "Your Degree (e.g., B.Tech. in Computer Science)",
-    institution: "Your University",
-    institutionLink: "https://youruniversity.com/",
-    period: "2020 - 2024",
-    score: "XX % or GPA",
+    degree: "Bachelor of Technology in Computer Science and Engineering",
+    institution: "Sree Vidyanikethan Engineering College",
+    institutionLink: "https://www.svec.education/",
+    period: "2021 - 2025",
+    score: "9.51 GPA",
   },
-  // Add more education as needed
 ];
