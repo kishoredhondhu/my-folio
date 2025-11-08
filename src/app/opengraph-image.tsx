@@ -4,6 +4,7 @@ import { ABOUT_ME, SOCIAL_LINKS } from "../components/constants/data";
 
 
 export const runtime = "edge";
+export const dynamic = 'force-static'
 export const alt = `${ABOUT_ME.name} - Portfolio Website`;
 export const size = {
   width: 1200,
