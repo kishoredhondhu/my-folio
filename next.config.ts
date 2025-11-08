@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: 'export',
   images: {
+    unoptimized: true, 
     remotePatterns: [
       {
         protocol: "https",
@@ -10,6 +12,9 @@ const nextConfig: NextConfig = {
     ],
     dangerouslyAllowSVG: true,
   },
+  basePath: '',  
+  assetPrefix: '', 
+  trailingSlash: true, 
 };
 
 export default nextConfig;
