@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ABOUT_ME, SOCIAL_LINKS } from "@/components/constants/data";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
-import { FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode, SiPeerlist } from "react-icons/si";
 import { FaBlog } from "react-icons/fa";
 
@@ -84,18 +84,20 @@ export default function AboutMe() {
       </div>
 
       <div className="flex gap-3 flex-wrap">
-        {SOCIAL_BUTTONS.filter((btn) => btn.href && btn.href.trim() !== "").map((btn) => (
-          <Link
-            key={btn.label}
-            href={btn.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`px-3 py-2 rounded-lg btn text-sm hover:scale-95 transition-transform ${btn.className || ""}`}
-            aria-label={btn.label}
-          >
-            {btn.icon}
-          </Link>
-        ))}
+        {SOCIAL_BUTTONS.filter((btn) => btn.href && btn.href.trim() !== "").map(
+          (btn) => (
+            <Link
+              key={btn.label}
+              href={btn.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`px-3 py-2 rounded-lg btn text-sm hover:scale-95 transition-transform ${btn.className || ""}`}
+              aria-label={btn.label}
+            >
+              {btn.icon}
+            </Link>
+          )
+        )}
       </div>
     </section>
   );
