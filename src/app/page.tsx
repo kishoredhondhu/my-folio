@@ -30,7 +30,7 @@ export default function Home() {
         <section id="experience"><Experience /></section>
         <section id="education"><Education /></section>
         <section id="github"><Github /></section>
-        <section id="leetcode"><LeetCode /></section>
+        {/* <section id="leetcode"><LeetCode /></section> */}
         <section id="blog"><Blog /></section>
         <section id="contact"><Contact /></section>
         
